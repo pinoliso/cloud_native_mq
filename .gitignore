@@ -1,2 +1,3 @@
 .docker-conf
 .vscode
+/target/

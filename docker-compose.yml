@@ -10,10 +10,26 @@ services:
         - 5672:5672
         - 15672:15672
     volumes:
-        - ./.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-        - ./.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+        - rabbitmq-data:/var/lib/rabbitmq
     networks:
         - rabbitmq_net
+  oracle_cn:
+    image: container-registry.oracle.com/database/free:latest
+    container_name: oracle_cn
+    ports:
+      - "1521:1521"    
+      - "5500:5500"    
+    environment:
+      ORACLE_PWD: 'admin'   
+      ORACLE_CHARACTERSET: 'AL32UTF8' 
+    volumes:
+      - oracle-data:/opt/oracle/oradata  
+
+volumes:
+  oracle-data:
+    driver: local
+  rabbitmq-data:
+    driver: local
 
 networks:
   rabbitmq_net:

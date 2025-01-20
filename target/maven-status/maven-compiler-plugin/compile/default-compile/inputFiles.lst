@@ -1,2 +1,5 @@
 /home/epino/cloud_native_rabbitmq/src/main/java/com/duoc/App.java
 /home/epino/cloud_native_rabbitmq/src/main/java/com/duoc/consumers/CloudNativeConsumer.java
+/home/epino/cloud_native_rabbitmq/src/main/java/com/duoc/models/Message.java
+/home/epino/cloud_native_rabbitmq/src/main/java/com/duoc/repositories/MessageRepository.java
+/home/epino/cloud_native_rabbitmq/src/main/java/com/duoc/services/MessageService.java
