@@ -18,13 +18,12 @@ public class CloudNativeConsumer {
     private MessageService messageService;
 
     @RabbitHandler
-    public void handleMessageRequest(byte[] message) throws Exception {
+    public void handleMessageRequest(String message) throws Exception {
 
-        String messageString = new String(message);
-        System.out.println(" Mensaje recibido '" + messageString + "'");
+        System.out.println(" Mensaje recibido '" + message + "'");
 
         Message messageModel = new Message();
-        messageModel.setMessage(messageString);
+        messageModel.setMessage(message);
         messageService.save(messageModel);
         System.out.println(" Mensaje guardado '" + messageModel.getMessage() + "'");
     }
