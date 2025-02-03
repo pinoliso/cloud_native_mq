@@ -1,0 +1,6 @@
+com\duoc\repositories\MessageRepository.class
+com\duoc\App.class
+com\duoc\models\Message.class
+com\duoc\services\MessageService.class
+com\duoc\consumers\SignalConsumer.class
+com\duoc\consumers\SummaryConsumer.class

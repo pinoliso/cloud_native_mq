@@ -46,6 +46,30 @@
 			<artifactId>ojdbc11</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+    
+
+    <dependency>
+        <groupId>com.oracle.database.security</groupId>
+        <artifactId>osdt_cert</artifactId>
+        <version>23.16.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.oracle.database.security</groupId>
+      <artifactId>osdt_cert</artifactId>
+      <version>21.16.0.0</version>
+  </dependency>
+
+  <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+  </dependency>
+
+    <dependency>
+        <groupId>com.oracle.database.security</groupId>
+        <artifactId>oraclepki</artifactId>
+        <version>23.6.0.24.10</version>
+    </dependency>
 
   </dependencies>
     <build>

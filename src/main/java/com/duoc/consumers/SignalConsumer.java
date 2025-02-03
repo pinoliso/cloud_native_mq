@@ -11,8 +11,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
-@RabbitListener(queues = "cloud_native_queue")
-public class CloudNativeConsumer {
+@RabbitListener(queues = "signals")
+public class SignalConsumer {
     
     @Autowired
     private MessageService messageService;
